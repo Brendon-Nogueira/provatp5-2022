@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width: 467em;
+    border: 3px;
+}
+
+td{
+    width: 101em ;
+    height: 40;
+}
