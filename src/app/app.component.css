@@ -4,11 +4,13 @@
 }
 
 table{
-    width: 467em;
-    border: 3px;
+    width: 100%;
+    border: 1px;
+    border: solid;
+    border-color: black;
 }
 
 td{
-    width: 101em ;
-    height: 40;
+    width: 25%;
+    height: 20%;
 }

@@ -3,30 +3,33 @@
 <div>
     
     <form #myClub="ngForm" (submit)="saveClub(myClub)">
+        <div>
         <label >Nome:</label>
         <input type="text" name="name" [(ngModel)]="newTimes.nome">
+    </div>
 
+    <div>
         <label>Pontuação:</label>
         <input type="text" name="pontuacao" [(ngModel)]="newTimes.pontuacao">
-        <input type="submit" value="Salvar">
+        <input type="submit" value="save">
+    </div>
     </form>
 </div>
 
 <div *ngFor=" let newTimes of timesList">
-    <h1>Classificação:</h1>
+    <h1>Classificação</h1>
 
     <table>
-        <colgroup span="4" class="colums"></colgroup>
         <tr>
-            <th [colSpan]="4">Classificação</th>
-            <th [colSpan]="4">Time:</th>
-            <th colspan="4">Pontuação</th>
+        <th>Classificação</th>
+        <th>Time</th>
+        <th>Pontuação</th>
         </tr>
 
-        <tr>
-            <td></td>
-            <td [rowSpan]="4">{{newTimes.nome}}</td>
-            <td rowspan="4">{{newTimes.pontuacao}}</td>
-        </tr>
+        <td></td>
+        <td rowspan="2">{{newTimes.nome}}</td>
+        <td rowspan="2">{{newTimes.pontuacao}}</td>
+
     </table>
+
 </div>
