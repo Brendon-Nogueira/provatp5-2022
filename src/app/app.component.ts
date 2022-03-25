@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   newTimes: Times = {} as Times
   timesList: Times [] = []
 
@@ -20,5 +20,7 @@ export class AppComponent {
     form.resetForm()
   }
 
+  positionTable(){
 
+  }
 }
