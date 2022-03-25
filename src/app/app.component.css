@@ -8,6 +8,7 @@ table{
     border: 1px;
     border: solid;
     border-color: black;
+    box-sizing: border-box;
 }
 
 td{
